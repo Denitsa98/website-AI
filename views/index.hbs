@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="header.html" rel="import" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="func.js"></script>
+    <title>AI LAB - TU-VARNA</title>
+
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    
+    <div id="header"></div>
+
+    <!--Hero Section -->
+    <section id="hero">
+        <div class="hero containerr">
+            <div>
+                <h1>Welcome to <span></span></h1>
+                <h1>Artificial <span></span></h1> 
+                <h1>Intelligence Laboratory <span></span></h1>
+                <a href="/login" type="button" class="cta"> Login </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="team containerr">
+            <div class="t-top">
+                <h1 class="section-title"> Team </h1>
+                <p>
+                    The composition of the laboratory is well prepared with the necessary capacity. 
+                    Everyone has their own publications and research, according to the specific field in which they improve.
+                </p>
+            </div>
+            <div class="team-bottom"> 
+                <div class="team-item" >
+                    <span class="popuptext" id="Popup"> His research interests are in signal processing and machine learning methods and their Biometrics, 
+                        Bioacoustics, and Human-Machine Interaction applications. </span>
+                    <div class="icon" onclick=PopFunction()>
+                        <img src="./img/todor.jpg"/>
+                    </div>
+                    <h2>Prof. Todor Ganchev, PhD</h2>
+                    <p>
+                       He is the founding Head of the Artificial Intelligence Laboratory and the Applied Signal Processing 
+                       Laboratory at TU-Varna. He is the Titular Professor on Artificial Intelligence at the Department of 
+                       Computer Science and Engineering. 
+                    </p>
+                </div>
+   
+                <div class="team-item">
+                    <span class="popuptext" id="Popup2"> His research interests are in software development for desktop and microcontroller applications.  </span>
+                    <div class="icon" onclick=PopFunction2()>
+                        <img src="./img/Iliqn.jpg"/>
+                    </div>
+                    <h2>Assist. Prof. Iliyan Boychev, PhD </h2>
+                    <p>
+                        He is assistant professor at the Technical University of Varna, Department of Computer Science and Engineering, since year 2015. 
+                        He earned his PhD degree in 2020, with dissertation entitled “Development of system for object inspection and detection”. To this end, Dr. Boychev has 
+                        authored/coauthored 8 publications, two of them in SCOPUS. 
+                    </p>
+                </div>
+
+                <div class="team-item">
+                    <span class="popuptext" id="Popup3"> Her research interests are in the area of Sensor Networks, Data Acquisition, Digital Signal Processing 
+                        and their applications in Health and Environment monitoring.   </span>
+                    <div class="icon" onclick="PopFunction3()">
+                        <img src="./img/valentina.jpg"/>
+                    </div>
+                    <h2>Assoc. Prof. Valentina Markova, PhD</h2>
+                    <p>
+                        She is the Head of the Sensor Networks Laboratory at the Department of Communication Engineering and Technologies. She is an Associate Professor at the Faculty of Computing and Automation, Technical University of Varna, 
+                        Bulgaria. 
+                    </p>
+                </div>
+
+                <div class="team-item">
+                    <span class="popuptext" id="Popup4"> His current research interest are in the area of Digital Signal Processing, Machine Learning, 
+                        Artificial Intelligence and Embedded Systems.   </span>
+                    <div class="icon" onclick="PopFunction4()">
+                        <img src="./img/F.Feradov_photo.jpg"/>
+                    </div>
+                    <h2>Assistant Prof. Firgan Feradov</h2>
+                    <p>
+                        He earned the PhD degree in May 2019 at the Department of Electronics and Microelectronics, Faculty of Computer Sciences and Automation, 
+                        University of Varna, Bulgaria. Currently he is with the Department of Electronics and Microelectronics in the Technical University of Varna.
+                    </p>
+                </div>
+
+                <div class="team-item">
+                    <span class="popuptext" id="Popup5"> Her research interests are in the area of Digital Signal Processing, Computational 
+                        Bioacoustics and their applications.   </span>
+                    <div class="icon" onclick="PopFunction5()">
+                        <img src="./img/prolet_deneva_web.jpg"/>
+                    </div>
+                    <h2>Assistant Prof. Prolet Deneva</h2>
+                    <p>
+                        She is currently working towards her PhD degree in Computer Science and Engineering. The topic of her 
+                        study is Computational Bioacoustics, and she is currently involved in RTD activities related to 1D and 2D parameterizations of 
+                        bioacoustics signals. Since 2019 she is an Assistant Professor at the Dept. 
+                        of Computer Science and Engineering.
+                    </p>
+                </div>
+
+                <div class="team-item">
+                    <span class="popuptext" id="Popup6"> His research interests include Artificial Intelligence and adaptive Human-Robot Interfaces.
+                           </span>
+                    <div class="icon" onclick="PopFunction6()">
+                        <img src="./img/Miroslav.jpg"/>
+                    </div>
+                    <h2>Assist. Prof. Miroslav Markov, PhD Student</h2>
+                    <p>
+                        He is a member of the Artificial Intelligence Laboratory at the Technical University of Varna.
+                        From 2020, he is a PhD Student at the Department of Computer Science and Technologies at the Technical University of Varna. 
+                        Currently, he is an Assistant Professor at the Department of Software and Internet Technologies. 
+                    </p>
+                </div>
+                <div class="team-item">
+                    <span class="popuptext" id="Popup7"> His research interests include Artificial Intelligence and adaptive Human-Robot Interfaces.
+                           </span>
+                    <div class="icon" onclick="PopFunction7()">
+                        <img src="./img/800_5cd1b1d40ff62.jpg"/>
+                    </div>
+                    <h2>Assist. Prof. Kalin Kalinkov, PhD Student</h2>
+                    <p>
+                        He is a member of the Artificial Intelligence Laboratory at the Technical University of Varna.
+                        From 2020, he is a PhD Student at the Department of Computer Science and Technologies at the Technical University of Varna. 
+                        Currently, he is an Assistant Professor at the Department of Software and Internet Technologies at the Technical University of Varna. 
+                    </p>
+                </div>
+                <div class="team-item">
+                    <span class="popuptext" id="Popup8"> Her research interests are in the areas of digital signal processing in communications, 
+                        radio navigation and radiolocation, computer networks and systems, embedded systems.
+                    </span>
+                    <div class="icon" onclick="PopFunction8()">
+                        <img src="./img/mariana_schotova.jpg"/>
+                    </div>
+                    <h2>Mariana Shotova, PhD</h2>
+                    <p>
+                         She earned the MSc degree in Communication Technology in 2007 and in 2013 her PhD degree in Theoretical Foundations 
+                         of Communication Technology, under "5.3 Communication and Computer Engineering". 
+                         She authored more than 20 scientific publications and participated in 8 RTD projects, 
+                         funded by national and EU Programmes.
+                    </p>
+                </div>
+                <div class="team-item">
+                    <span class="popuptext" id="Popup9"> His main research interests are related to biomedical engineering. In particular, 
+                        the processing of biomedical signals and images and the application of machine learning algorithms in medicine.
+                    </span>
+                    <div class="icon" onclick="PopFunction9()">
+                        <img src="./img/nikolay_dukov_dscf4980.jpg"/>
+                    </div>
+                    <h2>Nikolay Dukov, PhD</h2>
+                    <p>
+                        In 2019, he successfully defended his PhD dissertation. Since 2017 he has been appointed an assistant in the Department of 
+                        Computer Science and Technology, Technical University - Varna. 
+                        In 2020 became a member of the Department of Medical Equipment, Electronic and Information Technologies in 
+                        Healthcare at the Medical University of Varna "Prof. Dr. Paraskev Stoyanov" as an Assistant professor.
+                    </p>
+                </div>
+                
+
+            </div>
+            <div class="team-other">
+                <h1 class="other-title"> Visiting Researchers </h1>
+                <p>They are extremely potential people who have worked on various projects in the laboratory.
+                </p>
+            </div>
+            <div class="team-bottom">
+                <div class="team-item">
+                    <span class="popuptext" id="Popup10"> He has experience with data mining algorithms applied to meteorological and bioacoustics data.
+                    </span>
+                    <div class="icon" onclick="PopFunction10()">
+                        <img src="./img/allan.jpg"/>
+                    </div>
+                    <h2>Allan Gonçalves de Oliveira, PhD</h2>
+                    <p>
+                        He is an Adjunct Professor at the Institute of Computing at the Federal University of Mato Grosso (UFMT). 
+                        He is currently Deputy Director of the Institute of Computing at UFMT. 
+                        In year 2014, Adj. Prof. Allan Gonçalves de Oliveira was on a 3 months specialization at TU-Varna and carried out 
+                        research activities in the area of Computational Bioacoustics under the supervision of Prof. Todor Ganchev.
+                    </p>
+                </div>
+                <div class="team-item">
+                    <span class="popuptext" id="Popup11"> His research interests are in the area of bioacoustics, assessing the function 
+                        of bird dawn choruses, effect of habitat fragmentation on birdsong.
+                    </span>
+                    <div class="icon" onclick="PopFunction11()">
+                        <img src="./img/cristian.jpg"/>
+                    </div>
+                    <h2>Cristian Pérez-Granados, PhD</h2>
+                    <p>
+                        He earned his B.S. in Biology, a Masters in Conservation Biology 
+                        and a Ph.D in Conservation and Restoration of Ecosystems. He worked as a researcher of the 
+                        Autonomous University of Madrid within the project 
+                        “Conservation of the Dupont’s lark Chersophilus duponti and its habitat in Soria”.
+                        Currently, he works as a post-doctoral researcher in the National Institute for Science and 
+                        Technology in Wetlands, as a member of the Computational Bioacoustics Research Unit. 
+                    </p>
+                </div>
+                <div class="team-item">
+                    <span class="popuptext" id="Popup12"> His main research interests are in the 
+                        areas of artificial intelligence, big data, machine learning, and their applications.
+                    </span>
+                    <div class="icon" onclick="PopFunction12()">
+                        <img src="./img/thiago.gif"/>
+                    </div>
+                    <h2>Thiago Meirelles Ventura, PhD</h2>
+                    <p> 
+                        In 2015, he earned his PhD degree in Dept. of Ambient Physics.  His current RTD projects are in the 
+                        fields of meteorological and bioacoustics data processing. Currently works as Adjunct Professor at Institute of Computing (UFMT), 
+                        has bachelor's degree in Computer Science and Ph.D. in Environmental Physics, and experience in machine learning.In year 2014, he was 
+                        on a 3 months specialization at TU-Varna and carried out research activities in the area of Computational Bioacoustics 
+                        under the supervision of Prof. Todor Ganchev.
+
+                    </p>
+                </div>
+                <div class="team-item">
+                    <span class="popuptext" id="Popup13"> His current research interest is in the morphology of ricefish 
+                        species (Adranichthydae) located in Indonesia. 
+                    </span>
+                    <div class="icon" onclick="PopFunction13()">
+                        <img src="./img/tobias.jpg"/>
+                    </div>
+                    <h2>Tobias Spanke, MSc</h2>
+                    <p> 
+                        He earned his B.Sc. Degree at the Rheinischen-Friedrich-Wilhelms Universität Bonn. 
+                        During his M.Sc. Degree, he studied under the programme Organismic- Evolutionary- 
+                        and Paleobiology and in 2016 defended a Master thesis “Computational Bioacoustics: 
+                        Audio Libraries of the 
+                        Western Rock Nuthatch for Semi-Automated Sound Classification”. In 2018, he was 
+                        enrolled as a PhD student at the Zoological Research Museum Alexander Koenig (ZFMK). 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Team Section -->
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="projects box">
+            <div class="t-top">
+                <h1 class="section-title">Projects</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                      <h2>iHMi</h2>
+                      <p>
+                        <b>Investigation on Intelligent Human-Machine Interaction Interfaces, Capable to Recognize High-Risk Emotional and Cognitive Conditions </b>
+                        (12.2019 - 08.2023), funded by the Bulgarian National Science Fund under contract КП-06-Н37/18 
+                        The iHMI project aims to provide theoretical and methodological support for creating intelligent human-machine interfaces and the 
+                        corresponding technological assistance. This will be implemented by creating resources and conceptual demonstrators of a new 
+                        technological framework that will allow the automated assessment of the degree of attention, cognitive load, stress levels, and the 
+                        detection of negative emotional states. In addition to the collaborative human-robot systems in the industry, in the long term, the 
+                        results of this project may also support technology developers in various applied areas with social significance, including training, 
+                        healthcare, high-risk professions etc.
+                      </p>    
+                      <p>Further details are available at the project web-site: 
+                        <a href="http://isr.tu-varna.bg/ihmi/"> http://isr.tu-varna.bg/ihmi/ </a></p>   
+                  </div>
+                  <div class="col-md-6">
+                      <img id="proj1" src="./img/logo-iHMi.png" class="img-fluid" 
+                      alt="Investigation on Intelligent Human-Machine Interaction Interfaces, Capable to Recognize High-Risk Emotional and Cognitive Conditions"
+                      />
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
+                  </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>ILIAD</h2>
+                        <p> ILIAD: INTEGRATED DigitaL Framework FOR Comprehensive MARITIME DATA AND INFORMATION SERVICES (09.2021-09.2024), funded under H2020-LC-GD-2020-4 
+                        <br>                       
+                            The ILIAD project aims at establishing an interoperable, data-intensive, and cost-effective Digital Twin of the Ocean (DTO). It capitalizes on 
+                            the explosion of new data provided by many different earth sources, advanced computing infrastructures (cloud computing, HPC, Internet of Things, 
+                            Big Data, social networking, and more) in an inclusive, virtual/augmented, and engaging fashion to address all Earth Data challenges. It will contribute 
+                            towards a sustainable ocean economy as defined by the Centre for the Fourth Industrial Revolution and the Ocean, a hub for global, multistakeholder 
+                            co-operation. The enabling technology of the ILIAD DTO will contribute to the implementation of the EU’s Green Deal and Digital Strategy and to 
+                            the achievement of the UN Ocean Decade's outcomes and Sustainable Development Goals. To realize it is potential, ILIAD DTO will follow the System 
+                            of Systems approach, integrating all existing EU Earth Observing and Modelling Digital Infrastructures and Facilities.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                      <img id="proj2" src="./img/Horizon2020.jpg" class="img-fluid"  
+                      alt="INTEGRATED DigitaL Framework FOR Comprehensive MARITIME DATA AND INFORMATION SERVICES (09.2021-09.2024), funded under H2020-LC-GD-2020-4" />
+                        <div id="myModal2" class="modal">
+                          <span class="close">&times;</span>
+                          <img class="modal-content" id="img02">
+                          <div id="caption2"></div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>KnoWat</h2>
+                        <p> BG14MFOP001-6.004-0003-C01: Enhancing knowledge about the state of the aquatic environment in Lake Varna (01.2021 – 10.2022), 
+                            funded by the Maritime Affairs and Fisheries Program 2014-2020 
+                        <br>                       
+                        The KnoWat project aims at implementing measures to improve the state of the marine environment and support "blue growth" in the Varna region. The set 
+                        goals are related to the creation of resources, scientific knowledge, recommendations for actions and good practices that would help improve the condition 
+                        of Lake Varna and the services that the lake offers to businesses and citizens in the Varna region. For that purpose, the project will evaluate the pollution 
+                        composition at two regions of the Varna Lake silt and water, and will check for the availability of heavy metals, petroleum products, etc. Based on the 
+                        collected data the project will study various scenarios for situation development in Lake Varna, depending on the level of human intervention. These data 
+                        will help for the enhancement of scientific knowledge and good practices to support activities related to improving the marine environment.
+                        </p>
+                        <p>Further details are available at the project web-site: 
+                            <a href="http://isr.tu-varna.bg/knowat/"> http://isr.tu-varna.bg/knowat/ </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                      <img id="proj3" src="./img/KnoWat-blue-resize.png" class="img-fluid"  
+                      alt="BG14MFOP001-6.004-0003-C01: Enhancing knowledge about the state of the aquatic environment in Lake Varna" 
+                      style="width:100%;max-width:350px"/>
+                        <div id="myModal3" class="modal">
+                          <span class="close">&times;</span>
+                          <img class="modal-content" id="img03">
+                          <div id="caption3"></div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>NIF10</h2>
+                        <p> 10ИФ-02-13: Monitoring and Interpretation of Physiological States through Artificial Intelligence (11.2019 -  05.2021), co-funded by the Bulgarian 
+                            National Innovation Fund at the Ministry of Economy, Bulgaria 
+                        <br>                       
+                        The main project goal is to design and develop the technological tools needed to establish an intelligent health monitoring system that collects real-time 
+                        data from various biosensors and interprets the momentous physiological state based on the acquired physiological indicators and contextual information. 
+                        The core functionality is validated through two prototypical services Prototype 1 and Prototype 2, which demonstrate different technological aspects – 
+                        monitoring critical physiological parameters and monitoring for the availability or absence of stress and negative emotions. The successful validation 
+                        of the two functional prototypes will permit extensive data collection and serve as an essential resource for future in-depth studies. At the project end, 
+                        we intend to assess the commercialization potential of the developed technology.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                      <img id="proj4" src="./img/Logo-NIF10.jpg" class="img-fluid"  
+                      alt="10ИФ-02-13: Monitoring and Interpretation of Physiological States through Artificial Intelligence (11.2019 -  05.2021), co-funded by the Bulgarian National Innovation 
+                      Fund at the Ministry of Economy, Bulgaria" style="width:100%;max-width:350px"/>
+                        <div id="myModal4" class="modal">
+                          <span class="close">&times;</span>
+                          <img class="modal-content" id="img04">
+                          <div id="caption4"></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects -->
+
+    <!-- Publications -->
+    <section id="publications">
+        <div class="publications box">
+            <div class="t-top">
+                <h1 class="section-title">Publications</h1>
+            </div>
+            <div class="bottom-pub">
+                <div class="box-publications">
+                    <h2>01</h2>
+                    <a href="/01" data-after="TG - Bioacoustics"> <h3> TG - Bioacoustics </h3> </a> 
+                    <p>Books, Journal articles, Book chapters, 
+                        Conference Proceedings and Lecture Notes, Magazines & Bulletins  , Technical Reports 
+                    </p>
+                </div>  
+                <div class="box-publications">
+                    <h2>02</h2>
+                    <a href="/02" data-after="TG - Biometrics"> <h3> TG - Biometrics </h3> </a>
+                    <p>Journal articles, Conference Proceedings and Lecture Notes, Technical reports
+                    </p>
+                </div>    
+                <div class="box-publications">
+                    <h2>03</h2>
+                    <a href="/03" data-after="TG - Emotions"> <h3>TG - Emotions</h3> </a>
+                    <p>Journal articles, Edited volumes, Book chapters, Conference Proceedings and Lecture Notes
+                    </p>
+                </div>  
+                <div class="box-publications">
+                    <h2>04</h2>
+                    <a href="/04" data-after="TG - HMI"> <h3>TG - HMI</h3> </a>
+                    <p>Journal articles, Book chapters, Conference Proceedings and Lecture Notes, Technical reports
+                    </p>
+                </div>  
+                <div class="box-publications">
+                    <h2>05</h2>
+                    <a href="/05" data-after="TG - ML"> <h3>TG - ML</h3> </a>
+                    <p>Journals, Book chapters, Conference Proceedings and Lecture Notes
+                    </p>
+                </div>    
+                <div class="box-publications">
+                    <h2>06</h2>
+                    <a href="/06" data-after="TG - Physiological"> <h3>TG - Physiological</h3> </a>
+                    <p>Journal articles, Book chapters, Conference Proceedings and Lecture Notes
+                    </p>
+                </div>
+                <div class="box-publications">
+                    <h2>07</h2>
+                    <a href="/07" data-after="TG - Speech"> <h3>TG - Speech</h3> </a>
+                    <p>Books, Journal articles, Book chapters, Conference Proceedings and Lecture Notes, Technical Reports
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- End Publications -->
+
+    <!--Contact us-->
+    <section id="contact">
+        <div class="contact box">
+            <div class="t-top">
+                <h1 class="section-title">Contact Us</h1>
+            </div>
+            <div class="contact-info">
+                <div class="card">
+                    <i class="card-icon far fa-envelope"></i>
+                    <p>email@tu-varna.com</p>
+                </div>
+
+                <div class="card">
+                    <i class="card-icon fas fa-phone"></i>
+                    <p>+0000000000</p>
+                </div>
+
+                <div class="card">
+                    <i class="card-icon fas fa-map-marker-alt"></i>
+                    <p>Varna, BULGARIA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact us -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer containerr">
+            <div class="f_text">
+                <h1>TU-Varna</h1>
+                <h2>Artificial Intelligence Laboratory</h2>
+            </div>
+            <p>Email@2021 | AI Lab | TU-VARNA</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <script>
+    var modal = document.getElementById("myModal");
+    var img = document.getElementById("proj1");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+        modal.style.display = "none";
+    } 
+
+    var modal = document.getElementById('myModal2');
+    var img = document.getElementById('proj2');
+    var modalImg = document.getElementById("img02");
+    var captionText = document.getElementById("caption2");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close")[1];
+    span.onclick = function() { 
+        modal.style.display = "none";
+    } 
+
+    var modall = document.getElementById('myModal3');
+    var imgg = document.getElementById('proj3');
+    var modalImgg = document.getElementById("img03");
+    var captionTextt = document.getElementById("caption3");
+    imgg.onclick = function(){
+        modall.style.display = "block";
+        modalImgg.src = this.src;
+        captionTextt.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close")[2];
+    span.onclick = function() { 
+        modall.style.display = "none";
+    }
+
+    var modal4 = document.getElementById('myModal4');
+    var img4 = document.getElementById('proj4');
+    var modalImg4 = document.getElementById("img04");
+    var captionText4 = document.getElementById("caption4");
+    img4.onclick = function(){
+        modal4.style.display = "block";
+        modalImg4.src = this.src;
+        captionText4.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close")[3];
+    span.onclick = function() { 
+        modal4.style.display = "none";
+    }
+    </script>
+</body>
+</html>
